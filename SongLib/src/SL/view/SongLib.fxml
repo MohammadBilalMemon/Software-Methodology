@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  //Mohammad Bilal Memon(MBM186) and Jiya Kohli(JK1316) -->
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="427.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SL.view.SongLibController">
+	
+   <children>
+      <ListView fx:id="listView" prefHeight="94.0" prefWidth="427.0" AnchorPane.bottomAnchor="306.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      
+      <Button fx:id="dB" layoutX="128.0" layoutY="240.0" mnemonicParsing="false" onAction="#onClick_deleteButton" prefHeight="27.0" prefWidth="58.0" text="Delete" />
+      	
+      <Button fx:id="aB" layoutX="35.0" layoutY="240.0" mnemonicParsing="false" onAction="#onClick_addButton" prefHeight="27.0" prefWidth="58.0" text="Add" />
+      	
+      <Button fx:id="eB" layoutX="206.0" layoutY="240.0" mnemonicParsing="false" onAction="#onClick_editButton" prefHeight="27.0" prefWidth="58.0" text="Edit" />
+
+
+      <TextField fx:id="tSg" layoutY="110.0" prefHeight="25.0" prefWidth="427.0" promptText="Song" />
+
+	  <TextField fx:id="tArt" layoutY="135.0" prefHeight="25.0" prefWidth="427.0" promptText="Artist" />
+		
+	  <TextField fx:id="tAlb" layoutY="160.0" prefHeight="25.0" prefWidth="427.0" promptText="Album" />
+
+      <TextField fx:id="tYr" layoutY="185.0" prefHeight="25.0" prefWidth="427.0" promptText="Year" />
+      <TextField fx:id="songName" layoutY="299.0" prefHeight="25.0" prefWidth="427.0" promptText="song Input" />
+      <TextField fx:id="songArtist" layoutY="324.0" prefHeight="25.0" prefWidth="427.0" promptText="Artist Input" />
+      <TextField fx:id="songAlbum" layoutY="349.0" prefHeight="25.0" prefWidth="427.0" promptText="Album input" />
+      <TextField fx:id="songYear" layoutY="374.0" prefHeight="25.0" prefWidth="427.0" promptText="year input" />
+      <Button fx:id="exitButton" layoutX="299.0" layoutY="240.0" mnemonicParsing="false" onAction="#onCLick_exitButton" prefHeight="27.0" prefWidth="58.0" text="Exit" />
+
+      
+      	
+   </children>
+</AnchorPane>
